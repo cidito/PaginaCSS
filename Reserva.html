@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./estilo.css">
+
+    
+    <title>Reserva</title>
+
+</head>
+<body>
+    <header>
+        <center><h1 id="inicio" class="titulo">El portal restaurante</h1></center>
+        <br>
+        <center><a class="enlace1" href="./Index.html">Presentacion</a>  
+            &nbsp;&nbsp;&nbsp;&nbsp;  <a class="enlace2" href="./Menus.html">Menus</a>
+         &nbsp;&nbsp;&nbsp;&nbsp;   <a class="enlace3" href="./Reserva.html">Reserva</a></center>
+        <hr class="linea1">
+    </header>
+  <center> <form action="mailto:reservarestaurante@protonmail.com">
+       <label for="nombre"> Nombre:</label>
+        <input type="text" name="Nombre" id="nombre">
+        <br><br>
+        <label for="tarjeta">NºTarjeta</label>
+        <input type="text" name="Tarjeta" id="tarjeta">
+        <br><br>
+        <label for="fecha">Fecha de reserva</label>
+        <input type="date" name="Dia y Hora de reserva" id="fecha">
+        <br><br>
+        <label for="aviso">Aviso</label>
+        <input type="text" name="Comentario del cliente" id="aviso">
+        <br><br>
+        <label for="parking">Parking</label>
+        <input type="checkbox" name="Parking" id="parking">
+        <br><br>
+        <input type="radio" name="Zona de reserva" id="zona" value="Salón" value="Salón">Salón
+        <input type="radio" name="Zona de reserva" id="zona" value="terraza" value="Terraza">Terraza
+        
+        <br><br>
+        <input type="submit" value="Enviar">
+    
+    
+    </form>
+</center>
+</body>
+</html>
