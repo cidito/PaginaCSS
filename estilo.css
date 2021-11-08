@@ -21,14 +21,41 @@ html{
     color: #E5A13A ;
 }
 
-.tabla1{
+table,caption, tr, td {
 
-}
-
-td{
-
-}
-
-li{
-
-}
+        border: 5px solid;
+        border-collapse: collapse;
+        border-color: #f3d962;
+        border-style : ridge;
+        font-size: x-large;
+        color: beige;
+    }
+    .imagensopa , .imagenensalada , .imagenpasta , .imagenfiletes , .imagenpescado , .imagenberenjena ,
+    .imagenfruta , .imagenhelado , .imagentarta {
+        display:inline-block;
+        position:relative;
+      }
+      
+      .imagensopa > div , .imagenensalada > div , .imagenpasta > div , .imagenberenjena > div ,
+      .imagenfiletes > div , .imagenpescado > div , .imagenfruta > div , .imagenhelado > div ,
+      .imagentarta > div
+      {
+        position:absolute;
+        top:0;
+        left:0;
+        z-index:-1;
+        padding:10px;
+        margin:0;
+      }
+      
+      .desvanecesopa:hover , .desvanecepasta:hover , .desvaneceensalada:hover , .desvanecefiletes:hover , 
+      .desvanecepescado:hover , .desvaneceberenjena:hover , .desvanecehelado:hover , .desvanecefruta:hover ,
+      .desvanecetarta:hover
+      {
+        opacity: 0.07;
+        -webkit-transition: opacity 500ms;
+        -moz-transition: opacity 500ms;
+        -o-transition: opacity 500ms;
+        -ms-transition: opacity 500ms;
+        transition: opacity 500ms;
+      }
