@@ -2,34 +2,81 @@
     color: beige;
     font-style: italic;
     font-family: 'Segoe UI';
+    font-size: xx-large;
 
+}
+.titulo > span{
+    font-size: 75px;
 }
 html{
     background-image: url(./fondo1.jpg) ;
     min-height: 100%;
     background-size: cover;
 }
+p {
+    color: black;
+    font-family: 'Calibri';
+    font-size: 25px;
+}
 
 .enlace1,.enlace2,.enlace3,.enlace4{
-    color: #C5C3C2;
-    font-size: large;
+    color: #5c5b55;
+    font-size: 27px;
 }
-.linea1,.linea2{
+hr{
     color: #E5A13A;
+    height: 3px;
 }
-.enlace1:hover,.enlace2:hover,.enlace3:hover,.enlace4:hover{
+.enlace1:hover,.enlace2:hover,.enlace3:hover{
     color: #E5A13A ;
+    font-size: 34px;
+}
+.enlace4:hover {
+    color: #613c06;
+}
+
+.primeros, .segundos , .postres {
+    white-space: pre;
+    padding-left:  ; padding-right: 85%;
+}
+
+.texto {
+    font: beige;
+}
+
+.primeros > span, .segundos > span , .postres > span{
+        font-size: 30px;
+        text-transform: capitalize;
+}
+
+.cabeceratabla > span {
+    font-size: 65px;
 }
 
 table,caption, tr, td {
 
         border: 5px solid;
         border-collapse: collapse;
-        border-color: #f3d962;
+        border-color: #E5A13A;
         border-style : ridge;
         font-size: x-large;
-        color: beige;
+        color: black;
+        
     }
+caption {
+    background-color: #c1b061;
+}
+
+tr, td, .back {
+    background-color:white ;
+    font: black;
+    
+}
+ tr:hover,.back:hover {
+ background: transparent;
+}
+
+   
     .imagensopa , .imagenensalada , .imagenpasta , .imagenfiletes , .imagenpescado , .imagenberenjena ,
     .imagenfruta , .imagenhelado , .imagentarta {
         display:inline-block;
@@ -59,3 +106,53 @@ table,caption, tr, td {
         -ms-transition: opacity 500ms;
         transition: opacity 500ms;
       }
+
+
+.todo {
+    box-sizing: border-box;
+    
+}
+
+#nombre , #tarjeta , #fecha , #aviso {
+    background: #f7ebb5;
+}
+
+#parking{
+    background: #f7ebb5;
+    border-radius: 15px;
+    width: 20px; height: 30px;
+    position: absolute; top : 170px ;  
+    border-style: groove;
+}
+
+#boton {
+    background: #e2d07e;
+    font: white; font-size: 15px; font-family: 'Calibri';
+    border-radius: 5px;
+    border-color: #7a691c;
+    border-style: groove;
+}
+#boton:hover {
+
+    width: 20%;
+    height: 20%;
+}
+
+.formulario{
+    width:500px;
+	padding:16px;
+	border-radius:10px;
+	margin:auto;
+	background: #dbcb80 ;
+    position: relative;
+}
+.formulario > div > label {
+    width: 100px;
+	font-weight:bold;
+	display:contents;
+}
+
+.confondo {
+    background: yellow;
+}
+
