@@ -13,37 +13,42 @@
 </head>
 <body>
     <header>
-        <center><h1 id="inicio" class="titulo">El portal restaurante</h1></center>
+        <center><h1 id="inicio" class="titulo"><span> El portal restaurante </span></h1></center>
         <br>
-        <center><a class="enlace1" href="./Index.html">Presentacion</a>  
+        <center class="barra"><a class="enlace1" href="./Index.html">Presentacion</a>  
             &nbsp;&nbsp;&nbsp;&nbsp;  <a class="enlace2" href="./Menus.html">Menus</a>
          &nbsp;&nbsp;&nbsp;&nbsp;   <a class="enlace3" href="./Reserva.html">Reserva</a></center>
         <hr class="linea1">
     </header>
-  <center> <form action="mailto:reservarestaurante@protonmail.com">
+  <center> <form action="mailto:reservarestaurante@protonmail.com" class="formulario">
+    <div class="todo"> 
        <label for="nombre"> Nombre:</label>
-        <input type="text" name="Nombre" id="nombre">
+        <span class="confondo"><input type="text" name="Nombre" id="nombre" /></span>
         <br><br>
         <label for="tarjeta">NºTarjeta</label>
-        <input type="text" name="Tarjeta" id="tarjeta">
+        <input type="text" name="Tarjeta" id="tarjeta" class="conboton" />
         <br><br>
         <label for="fecha">Fecha de reserva</label>
-        <input type="date" name="Dia y Hora de reserva" id="fecha">
+        <input type="datetime-local" name="Dia y Hora de reserva" id="fecha" class="conboton" />
         <br><br>
         <label for="aviso">Aviso</label>
-        <input type="text" name="Comentario del cliente" id="aviso">
+        <input type="text" name="Comentario del cliente" id="aviso" class="conboton" />
         <br><br>
-        <label for="parking">Parking</label>
-        <input type="checkbox" name="Parking" id="parking">
+        <label class="park" for="parking">Parking</label>
+        <input type="checkbox" name="Parking" id="parking" class="inputbox">
         <br><br>
-        <input type="radio" name="Zona de reserva" id="zona" value="Salón" value="Salón">Salón
-        <input type="radio" name="Zona de reserva" id="zona" value="terraza" value="Terraza">Terraza
+        <input type="radio" name="Zona de reserva" id="zona" value="Salón" value="Salón"/>Salón
+        <input type="radio" name="Zona de reserva" id="zona" value="terraza" value="Terraza"/>Terraza
         
         <br><br>
-        <input type="submit" value="Enviar">
+        <input type="submit" value="Enviar" id="boton">
     
     
-    </form>
+    </div></form>
 </center>
+
+<br>
+<center> <a class="enlace4" href=#inicio>Volver arriba</a> </center>
+ <hr class="linea2">
 </body>
 </html>
